@@ -26,7 +26,7 @@ object KMeansApp extends App {
 
   val cost = clusters.computeCost(sc.makeRDD(x))
 
-  println("clusterCenters: "+clusters.clusterCenters.to)
+  println("ClusterCenters: "+clusters.clusterCenters.to)
   println("Sum of squared errors: " + cost)
   sc.stop()
 }
